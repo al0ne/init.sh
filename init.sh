@@ -22,7 +22,7 @@ LEVEL='full'
 install_zsh() {
     apt install -y zsh >/dev/null 2>&1
     echo -e "开始配置ohmyzsh"
-    sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(wget -O- https://pastebin.com/raw/FAFw08G6)"
     chsh -s /bin/zsh
     sed -i 's@ZSH_THEME="robbyrussell"@ZSH_THEME="xiong-chiamiov-plus"@g' ~/.zshrc
     sed -i 's@plugins=(.*)@plugins=(git extract zsh-syntax-highlighting autojump zsh-autosuggestions)@g' ~/.zshrc
